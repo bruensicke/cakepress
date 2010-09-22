@@ -1,0 +1,104 @@
+#flashMessage,
+.flasher {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0px;
+	color: #333;
+	text-align: center;
+	padding: 20px 0;
+	background: #fff;
+	border-bottom: 4px solid #ccc;
+	font-size: 150%;
+	z-index: 3;
+	opacity: 0.8;
+	}
+
+	#flashMessage small,
+	.flasher small {
+		font-size: 70%;
+		}
+
+	#flashMessage p,
+	.flasher p {
+		margin: 0;
+		padding: 0;
+		}
+
+	.success {
+		background: #BDE1B6;
+		border-color: #82BD6C;
+		}
+
+	.error {
+		background: #E1BDB6;
+		border-color: #BD826C;
+		}
+
+div.btnbar {
+	float: right;
+	}
+
+	div.btnbar ul { list-style: none; }
+	div.btnbar ul li { display: inline-block; margin-right: 6px; }
+
+div.navbar {
+	background: rgba(0, 0, 0, 0.6);  /* FF3+, Saf3+, Opera 10.10+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#99B4B490',EndColorStr='#99B4B490'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#99B4B490',EndColorStr='#99B4B490')"; /* IE8 */
+}
+
+/* Related */
+div.related {
+	clear: both;
+	display: block;
+}
+
+/* Debugging */
+pre {
+	color: #000;
+	background: #f0f0f0;
+	padding: 1em;
+}
+pre.cake-debug {
+	background: #ffcc00;
+	font-size: 120%;
+	line-height: 140%;
+	margin-top: 1em;
+	overflow: auto;
+	position: relative;
+}
+div.cake-stack-trace {
+	background: #fff;
+	border: 4px dotted #ffcc00;
+	color: #333;
+	margin: 0px;
+	padding: 6px;
+	font-size: 120%;
+	line-height: 140%;
+	overflow: auto;
+	position: relative;
+}
+div.cake-code-dump pre {
+	position: relative;
+	overflow: auto;
+}
+div.cake-stack-trace pre, div.cake-code-dump pre {
+	color: #000;
+	background-color: #F0F0F0;
+	margin: 0px;
+	padding: 1em;
+	overflow: auto;
+}
+div.cake-code-dump pre, div.cake-code-dump pre code {
+	clear: both;
+	font-size: 12px;
+	line-height: 15px;
+	margin: 4px 2px;
+	padding: 4px;
+	overflow: auto;
+}
+div.cake-code-dump span.code-highlight {
+	background-color: #ff0;
+	padding: 4px;
+}

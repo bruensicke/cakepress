@@ -1,0 +1,70 @@
+@import url('default.css');
+@import url('admin.layout.css');
+@import url('admin.form.css');
+
+body {
+	margin: 0;
+	color: #444;
+	background: #f9f9f9;
+	font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+	font-size: 13px;
+}
+
+h1, h2, h3 {
+	font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+	padding: 0;
+	margin: 0 0 0 6px;
+}
+
+h1 {
+	font-size: 2.8em;
+}
+
+h2 {
+	font: italic normal normal 24px/29px Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+	font-size: 1.5em;
+	line-height: 35px;
+	margin: 0px;
+	padding: 14px 15px 3px 0px;
+	text-shadow: white 0px 1px 0px;
+}
+
+h3 {
+	font-size: 13px;
+	text-shadow: white 0px 1px 0px;
+	font-weight: bold;
+	margin: 0;
+	padding: 7px 9px;
+}
+
+p { padding: 0; margin: 0 10px 4px 10px; }
+
+a:focus, a:hover { color: #025; text-decoration: underline; }
+a { color: #058; text-decoration: none; }
+
+a, a:focus, a:active, a:visited {
+   outline: none;
+}
+
+
+
+/* Boxes and Widgets */ 
+
+div.box { 
+	margin: 0 0 10px 0;
+	border: 1px solid #DFDFDF;
+	border-top-left-radius: 6px 6px;
+	border-top-right-radius: 6px 6px;
+}
+div.box div.caption {
+	background: #d9d9d9; /* fallback color */
+	background:-moz-linear-gradient(bottom,  #d7d7d7,  #e4e4e4);
+	background:-webkit-gradient(linear, left bottom, left top, from(#d7d7d7), to(#e4e4e4));
+
+}
+
+div.box div.box_wrapper {
+	background: #fff;
+}
+
+

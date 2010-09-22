@@ -22,6 +22,10 @@ $content = (isset($content))
 	? $content
 	: array();
 
+$header = (isset($header))
+	? $header
+	: array();
+
 $footer = (isset($footer))
 	? $footer
 	: array();
@@ -29,14 +33,27 @@ $footer = (isset($footer))
 if($template == 'admin')
 {
 
+	$header[] = __('Configure which fields to see in Quickpress.', true);
+
 	$content[] = $this->Form->input('Widget.data.fields', array(
 		'type' => 'select',
 		'multiple' => true,
 		'options' => $quickpress_options,
 	));
-
+	$footer['actions'] = array();
+	$footer['actions'][] = $this->Html->link( __('cancel', true), '#', array(
+		'class' => '',
+	));
+	$footer['actions'][] = $this->Html->link( __('cancel', true), '#', array(
+		'class' => 'btn',
+	));
+	$footer['actions'][] = $this->Html->link( __('Save', true), '#', array(
+		'class' => 'btn primary',
+	));
 
 } else {
+
+	$header[] = __('Please write some content.', true);
 
 	foreach($fields as $field)
 	{
@@ -51,7 +68,7 @@ if($template == 'admin')
 
 			case 'content':
 				$content[] = $this->Form->input('ContentObject.content', array(
-					'type' => 'text',
+					'type' => 'textarea',
 					'default' => 'put your content here',
 				));
 				break;
@@ -65,14 +82,16 @@ if($template == 'admin')
 		}
 	}
 
-	$footer[] = $this->Form->button( __('Save', true), array(
+	$footer['actions'] = $this->Form->button( __('Save', true), array(
 		'class' => 'primary',
 	));
 
 }
 
-echo $this->element('flour/box', array(
-	'caption' => $caption,
-	'content' => (is_array($content)) ? implode($content) : $content,
-	'footer' => (is_array($footer)) ? implode($footer) : $footer,
+echo $this->element('flour/box', 
+	compact(
+		'caption',
+		'content',
+		'header',
+		'footer'
 ));

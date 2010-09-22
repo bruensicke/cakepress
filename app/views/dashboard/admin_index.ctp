@@ -28,6 +28,13 @@ $items[] = array(
 $items[] = array(
 	'type' => 'quickpress',
 	'target' => 'b',
+	'caption' => 'Schnellschreiben',
+	'template' => 'admin',
+);
+
+$items[] = array(
+	'type' => 'quickpress',
+	'target' => 'b',
 	// 'caption' => 'Schnellschreiben',
 	// 'template' => 'admin',
 );

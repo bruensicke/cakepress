@@ -11,11 +11,11 @@
 		'/flour/css/templates',
 	));
 	echo $this->Html->script(array(
-		'/flour/js/jquery/jquery',
-		'/flour/js/jquery/jqueryui',
-		'/flour/js/jquery/form',
-		'/flour/js/jquery/tipsy',
-		'/flour/js/jquery/blockui',
+		'/flour/js/jquery',
+		'/flour/js/jquery.ui',
+		'/flour/js/jquery.form',
+		'/flour/js/jquery.tipsy',
+		'/flour/js/jquery.blockui',
 	));
 
 	echo $scripts_for_layout;

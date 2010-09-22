@@ -43,6 +43,11 @@ $items[] = array(
 echo $this->Widget->row($items, 'half', array('style' => 'padding: 10px;'));
 
 
-
+echo $this->element('flour/box', array(
+	'template' => 'half',
+	'caption' => 'HAHAHAHAHHAHAHA',
+	'content' => array('a' => 'HUHU A', 'b' => 'HAHA B'),
+	'footer' => 'FOOT',
+));
 
 echo $this->element('admin/content_stop');

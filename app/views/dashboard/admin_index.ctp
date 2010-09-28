@@ -1,7 +1,7 @@
 <?php
 $this->title = __('Dashboard', true);
 $this->icon = 'home';
-echo $this->element('admin/content_start');
+echo $this->element('flour/content_start');
 
 $items = array();
 $items[] = array(
@@ -50,4 +50,4 @@ echo $this->element('flour/box', array(
 	'footer' => 'FOOT',
 ));
 
-echo $this->element('admin/content_stop');
+echo $this->element('flour/content_stop');

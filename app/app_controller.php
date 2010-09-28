@@ -24,6 +24,7 @@ class AppController extends Controller
  * @var string
  */
 	public $components = array(
+		'Session',
 		'Flour.Config',
 		'Layout',
 	);

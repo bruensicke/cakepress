@@ -16,6 +16,8 @@
 		'/flour/js/jquery.form',
 		'/flour/js/jquery.tipsy',
 		'/flour/js/jquery.blockui',
+		'/flour/js/jquery.elastic',
+		'/flour/js/jquery.slug',
 	));
 
 	echo $scripts_for_layout;
@@ -25,7 +27,7 @@
 	<div id="container">
 		<div id="header">
 			<div class="btnbar"><?php echo $this->element('admin/nav.user'); ?></div>
-			<h1><?php echo $this->Html->link(Configure::read('App.Settings.name'), array('controller' => 'flour', 'action' => 'index', 'plugin' => 'flour')); ?></h1>
+			<h1><?php echo $this->Html->link(Configure::read('App.Settings.name'), array('controller' => 'dashboard', 'action' => 'index', 'plugin' => null)); ?></h1>
 		</div>
 		<div id="navigation">
 			<?php echo $this->element('admin/nav.main'); ?>

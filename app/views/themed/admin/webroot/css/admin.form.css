@@ -74,6 +74,14 @@ select {
 
 
 
+/* very specific stuff */
+textarea.description {
+	height: 20px;
+}
+
+div.input.hover {
+	background-color: #E5ECF9;
+}
 
 
 
@@ -125,23 +133,6 @@ div.panel {
 	
 	border: 1px solid #fff;
 	background: rgba(255, 255, 255, 0.6);
-	}
-
-form .full {
-	width: 98%;
-	}
-
-form .half {
-	width: 64%;
-	}
-
-form .third {
-	width: 44%;
-	}
-
-form .big {
-	font-size: 200%;
-	padding: 4px;
 	}
 
 div.input {

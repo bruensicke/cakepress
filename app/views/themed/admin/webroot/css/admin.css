@@ -31,6 +31,7 @@ h2 {
 
 h3 {
 	font-size: 13px;
+	line-height: 13px;
 	text-shadow: white 0px 1px 0px;
 	font-weight: bold;
 	margin: 0;
@@ -50,6 +51,10 @@ a, a:focus, a:active, a:visited {
 
 /* Boxes and Widgets */ 
 
+div.section {
+	border-bottom: 1px solid #DFDFDF;
+}
+
 div.box { 
 	margin: 0 0 10px 0;
 	border: 1px solid #DFDFDF;
@@ -61,7 +66,7 @@ div.box {
 div.box div.caption {
 	border-top-left-radius: 7px 7px;
 	border-top-right-radius: 7px 7px;
-	background: #d9d9d9; /* fallback color */
+	background-color: #d9d9d9; /* fallback color */
 	background:-moz-linear-gradient(bottom,  #d7d7d7,  #e4e4e4);
 	background:-webkit-gradient(linear, left bottom, left top, from(#d7d7d7), to(#e4e4e4));
 
